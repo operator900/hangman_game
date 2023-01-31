@@ -5,6 +5,12 @@
 
 using namespace std;
 
+/*
+Constructor
+    Returns: N/A
+    Throws: exception of member type failure if file isn't found.
+    
+*/
 Hangman::Hangman() {
     ifstream fileArt;
     string item;
@@ -19,10 +25,18 @@ Hangman::Hangman() {
     fileArt.close();
 }
 
+/*
+Destructor
+    Returns: N/A
+    Throws: N/A
+*/
 Hangman::~Hangman(){
     delete [] hangmanCharts;
 }
 
+/*
+
+*/
 size_t Hangman::getSize() const{
     return hangmanCharts->size();
 }
