@@ -21,7 +21,10 @@ WordData::WordData(){
 }
 
 string WordData::chooseWord(){
-    
+    random_device generator;
+    uniform_int_distribution<int> distribution(0, 10000);
+    int dice_roll = distribution(generator);
+    return wordArray->at(dice_roll);
 }
 
 WordData::~WordData(){
