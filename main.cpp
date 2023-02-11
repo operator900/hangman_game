@@ -9,7 +9,14 @@ void start(){
     clock_t timer;
     float seconds;
 
-    timer = clock();
+    timer = clock();        //From my understanding, the timer starts here, then continues to time until it hits the second initialization of timer.
+    //Game start here
+
+
+
+
+
+    //Game end here.
     timer = clock() - timer;
     seconds = ((float)timer)/CLOCKS_PER_SEC;
 
